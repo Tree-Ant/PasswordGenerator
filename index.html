@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Password Generator</title>
 
     <link rel="stylesheet" href="reset.css">
@@ -12,11 +14,16 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-
 </head>
 
 <body>
-    <script src="pass.js"></script>
+
+
+
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -37,11 +44,11 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-6">
-
-                                                                    <button id="generate" type="button" class="btn btn-danger btn-lg" >Generate Password</button>
+                                                                        <button id="generate" type="button" class="btn btn-danger btn-lg" onclick="activate()">Generate Password</button>
                                                                 </div>
                                                                 <div class="col-6">
-                                                                    <button id="copy" type="button" class="btn btn-secondary btn-lg" >
+                                                                    <button id="copy" type="button"
+                                                                        class="btn btn-secondary btn-lg">
                                                                         Copy to Clipboard
                                                                     </button>
                                                                 </div>
@@ -60,6 +67,20 @@
             </div>
         </div>
     </div>
+    <script>
+        var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "@", "#", "$", "%", "^", "&", "*"]
+
+        var num = char[Math.floor(Math.random() * char.length)];
+        function activate() {
+            var s = "";
+            for (var i = 0; i < 16; i++) {
+                s += char[Math.floor(Math.random() * char.length)];
+            }
+            console.log(s);
+            document.getElementById("password").innerHTML = s;
+        }
+
+    </script>
 </body>
 
 </html>
