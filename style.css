@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: darkslategrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    
+}
+
+.mainbox {
+    background: lightgrey;
+    margin-top: 100px;
+    border: solid 1px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.innerbox {
+    margin-top: 20px;
+    background: whitesmoke;
+    padding: 10px;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+}
+
+.genbox {
+    width: 100%;
+    padding-top: 20px;    
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    
+    border: solid 1px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px; 
+    margin: 20px 0px;   
+        
+}
+#generate {
+    border-radius: 45px;
+}
+#copy {
+    border-radius: 45px;
+}
+
+@media screen and (max-width: 768px) {
+    .innerbox {
+        padding: auto 0px;
+        margin-bottom: 10px;
+    }
+    .mainbox {
+        padding: 0px;
+    }
+    h1 {
+        
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
