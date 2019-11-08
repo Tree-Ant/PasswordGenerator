@@ -268,6 +268,14 @@ if (charLength === " "){
     alert("YOU DO NOT DESERVE A PASSWORD!!!")
 }
 
+function copyToClip() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
 
 //2
 
