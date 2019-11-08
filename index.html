@@ -9,31 +9,26 @@
 
     <title>Password Generator</title>
 
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-
-
-
-
-
-
-    <div class="container">
+    <div class="container"  >
         <div class="row">
             <div class="col-12">
                 <div class="mainbox">
-                    <h1>Password Generator</h1>
+                    <h1><strong> PASSWORD GENERATOR</strong> </h1>
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="innerbox">
-                                    <h2>Generate a Password</h2>
+                                    <h2>GENERATE A PASSWORD</h2>
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-12">
@@ -44,7 +39,9 @@
                                                         <div class="container">
                                                             <div class="row">
                                                                 <div class="col-6">
-                                                                        <button id="generate" type="button" class="btn btn-danger btn-lg" onclick="activate()">Generate Password</button>
+                                                                    <button id="generate" type="button"
+                                                                        class="btn btn-danger btn-lg"
+                                                                        onclick="activate()">Generate Password</button>
                                                                 </div>
                                                                 <div class="col-6">
                                                                     <button id="copy" type="button"
@@ -67,20 +64,8 @@
             </div>
         </div>
     </div>
-    <script>
-        var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "@", "#", "$", "%", "^", "&", "*"]
-
-        var num = char[Math.floor(Math.random() * char.length)];
-        function activate() {
-            var s = "";
-            for (var i = 0; i < 16; i++) {
-                s += char[Math.floor(Math.random() * char.length)];
-            }
-            console.log(s);
-            document.getElementById("password").innerHTML = s;
-        }
-
-    </script>
+    
+    <script src="./pass.js"></script>
 </body>
 
 </html>
