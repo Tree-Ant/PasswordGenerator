@@ -18,7 +18,7 @@ function activate() {
 */
 
 //* Length (must be between 8 and 128 characters)
-var charLength = prompt("How many Characters would you Like? (btw 8-128)", "");
+var charLength = prompt("How many Characters would you Like? Password should be between 8-128, if not suffer the consequences!!!", "(8-128)");
 var charSpec = confirm("Would you like special characters?")
 var charUpper = confirm("Would you like Upper Case Letters?")
 var charLower = confirm("Would you like Lower Case Letters?")
@@ -38,6 +38,7 @@ var charNum = confirm("Would you like Numbers?")
 
 
 //1--
+if(charLength >= 8 && charLength <= 128){
 if (charSpec == true && charUpper === true && charLower === true && charNum === true) {
     var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
@@ -264,10 +265,6 @@ if (charSpec == true && charUpper === true && charLower === true && charNum === 
     alert("YOU DO NOT DESERVE A PASSWORD!!!")
     }
 
-if (charLength === " "){
-    alert("YOU DO NOT DESERVE A PASSWORD!!!")
-}
-
 function copyToClip() {
   var copyText = document.getElementById("password");
   copyText.select();
@@ -275,7 +272,9 @@ function copyToClip() {
   document.execCommand("copy");
   alert("Copied the text: " + copyText.value);
 }
-
+} else {
+    window.location.href = "boo.html";
+}
 
 //2
 
