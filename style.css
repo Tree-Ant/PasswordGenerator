@@ -88,6 +88,9 @@ button {
         padding: auto 0px;
         margin-bottom: 10px;
     }
+    body{
+        text-align: right;
+    }
     .mainbox {
         padding: 0px;
     }

@@ -143,7 +143,7 @@ if(charLength >= 8 && charLength <= 128){
     var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
      "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
@@ -157,7 +157,7 @@ if(charLength >= 8 && charLength <= 128){
     var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
       
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
 
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
@@ -171,7 +171,7 @@ if(charLength >= 8 && charLength <= 128){
 } else if (charSpec == false && charUpper === true && charLower === false && charNum === true){
     var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
      "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
@@ -184,7 +184,7 @@ if(charLength >= 8 && charLength <= 128){
 }else if (charSpec == false && charUpper === true && charLower === false && charNum === false){
     var char = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
      
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
@@ -198,7 +198,7 @@ if(charLength >= 8 && charLength <= 128){
     var char = [ 
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
      "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
@@ -212,7 +212,7 @@ if(charLength >= 8 && charLength <= 128){
     var char = [ 
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
      
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+    ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
@@ -226,7 +226,7 @@ if(charLength >= 8 && charLength <= 128){
     var char = [ 
      
      "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 
-     "!", "@", "#", "$", "%", "^", "&", "*"]
+     ]
     var num = char[Math.floor(Math.random() * char.length)];
         var s = "";
         for (var i = 0; i < charLength; i++) {
