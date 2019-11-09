@@ -9,7 +9,7 @@
 
     <title>Password Generator</title>
 
-    
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -40,14 +40,34 @@
                                                             <div class="row">
                                                                 <div class="col-6">
                                                                     <button id="generate" type="button"
-                                                                        class="btn btn-danger btn-lg"
-                                                                        onclick="activate()">Generate Password</button>
+                                                                        class="btn btn-danger btn-lg">Generate
+                                                                        Password</button>
                                                                 </div>
                                                                 <div class="col-6">
                                                                     <button id="copy" type="button"
-                                                                        class="btn btn-secondary btn-lg" onclick="copyToClip()">
+                                                                        class="btn btn-secondary btn-lg">
                                                                         Copy to Clipboard
                                                                     </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="options">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        Character Length:
+                                                                        <input type="number" id="charLong" value="8">
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        Special:
+                                                                        <input type="checkbox" id="charSpec">
+                                                                        Upper Case:
+                                                                        <input type="checkbox" id="charUpper">
+                                                                        Lower Case:
+                                                                        <input type="checkbox" id="charLower">
+                                                                        Number:
+                                                                        <input type="checkbox" id="charNum">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -64,8 +84,11 @@
             </div>
         </div>
     </div>
-    
-    <script src="./pass.js"></script>
+    </div>
+    </div>
+    </div>
+
+    <script src="./script2.js"></script>
 </body>
 
 </html>
