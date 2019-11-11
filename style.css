@@ -88,8 +88,12 @@ button {
         padding: auto 0px;
         margin-bottom: 10px;
     }
-    body{
+    
+    #checkboxes{
         text-align: right;
+    }
+    #length{
+        text-align: left;
     }
     .mainbox {
         padding: 0px;
